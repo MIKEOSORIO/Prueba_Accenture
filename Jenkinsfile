@@ -8,8 +8,12 @@ pipeline{
     }
     stage('Test'){
       steps{
+       sh '''
+        echo 'Do something'
         hostname
-        touch 1
+        echo 'hola'
+        pwd
+        '''
       }
     }
     stage('Deploy'){
