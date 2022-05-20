@@ -8,7 +8,10 @@ pipeline{
     }
     stage('Test'){
       steps{
-      echo "Do something1"
+        ls
+        echo "hola"
+        echo $prueba
+        pwd
       }
     }
     stage('Deploy'){
